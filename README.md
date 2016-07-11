@@ -11,4 +11,4 @@ I've created this project to have something I can use when the online playground
 3. Open http://localhost:3000 in your browser
 4. Start playing with the `index.html`, `index.js` and `style.scss`
 
-Or you can run `npm build` to have your `.js` and `.css` files generated to the `./dist` folder.
+Or you can run `npm run build` to have your `.js` and `.css` files generated to the `./dist` folder.
