@@ -5,6 +5,7 @@ const path = require('path'),
 
 const config = {
     entry: './index.js',
+    devtool: 'sourcemap',
     resolve: {
         root: __dirname,
         modulesDirectories: [
@@ -28,7 +29,7 @@ const config = {
             }
         }, {
             test: /\.scss$/,
-            loader: `style-loader!css-loader!postcss-loader!sass-loader?includePaths[]=${encodeURIComponent(path.resolve(__dirname, './node_modules'))}`
+            loader: `style-loader!css-loader?sourceMap!postcss-loader!sass-loader?includePaths[]=${encodeURIComponent(path.resolve(__dirname, './node_modules'))}`
         }]
     },
     postcss: () => [
